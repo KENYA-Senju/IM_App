@@ -1,0 +1,6 @@
+#python cache folder (just bytecode)
+__pythoncache__/
+*.pyc
+
+#sqlite databases 
+*.db
