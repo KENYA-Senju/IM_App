@@ -1,0 +1,11 @@
+Inventory Management Project Notes: 
+
+
+Constraints: consider a verification system in which the entire fullstack handles verification: 
+
+Front End: veriification
+         + 
+Back End: verification
+         + 
+Database constriants
+

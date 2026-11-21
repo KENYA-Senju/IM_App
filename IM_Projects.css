@@ -1,0 +1,23 @@
+.project-list { display: grid; gap: 10px; margin-top: 16px; }
+.project-list details, .component details {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--panel-raised);
+}
+.project-list summary, .component summary {
+    cursor: pointer;
+    padding: 14px 16px;
+    color: white;
+    font-weight: 700;
+}
+.project-list summary:hover, .component summary:hover { color: var(--green); }
+.project-content, .component-content { padding: 0 16px 16px; }
+.component-list { display: grid; gap: 10px; margin-top: 16px; }
+.component { border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+.component-heading { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 12px 0; }
+.component-heading h3 { margin: 0; }
+.parts { display: grid; gap: 8px; margin-top: 14px; }
+.part { display: grid; grid-template-columns: 2fr repeat(4, 1fr) auto; gap: 8px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); color: var(--grey); }
+.add-component, .add-part { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+.ok { color: var(--green); } .missing { color: var(--danger); }
+@media (max-width: 700px) { .part { grid-template-columns: 1fr 1fr; } }
