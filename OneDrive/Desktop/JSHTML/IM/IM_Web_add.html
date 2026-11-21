@@ -1,0 +1,51 @@
+<!Doctype html> 
+<html lang="eng"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Update Item(s)</title>
+        <link rel="stylesheet" href="IM_Style.css">
+    </head>
+    <body>
+    <header class="page-header">
+        <p>INVENTORY / UPDATE</p>
+        <h1>Adjust inventory</h1>
+        <p>Add, remove, or set stock against a validated project allocation.</p>
+    </header>
+    <main class="panel">
+    <h2>Item modification</h2>
+
+    <input type="radio" name="op" value="Add" checked />ADD</br>
+    <input type="radio" name="op" value="Remove" />REMOVE</br>
+    <input type="radio" name="op" value="Set" />SET</br>
+
+
+   
+    
+    
+    <p> Material: </p>
+    <input type="text" id="search" list="materials-list" placeholder="Type Specifically">
+    <datalist id="materials-list"></datalist>
+    <p>  Quantity: </p>
+    <input type="number" id="amount" placeholder="Int: 0,1,2,3,....."> 
+    <p> Designated Project: </p>
+    <input type="text" id = "project" list = "project-track" placeholder= "Ex: Varsity Bot, Racing Team"> 
+    <datalist id="project-track"></datalist>
+    <button id="placeAddRequest"> Place Request </button>
+    <a href= "IM_Web.html"> <button id = 'addBtn'> Return Home </button> </a>
+
+
+
+    <section class="panel">
+    <h2>Inventory distribution</h2>
+    <div id="allocation-legend"></div>
+    <div class="table-wrap"><table id = "table" class="data-table"> 
+    </table></div>
+    </section>
+    </main>
+    <footer class="page-footer"><a href="IM_Web.html">Return home</a></footer>
+    <script src="IM_Config.js"></script>
+    <script src = "IM_Listener.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventory Projects</title>
+    <link rel="stylesheet" href="IM_Style.css">
+    <link rel="stylesheet" href="IM_Projects.css">
+    <!--
+    <style>
+        :root { font-family: system-ui, sans-serif; color: #1f2937; background: #f4f6f8; }
+        body { max-width: 1100px; margin: 0 auto; padding: 24px; }
+        header, section { background: white; border: 1px solid #d8dee6; border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+        h1, h2, h3 { margin-top: 0; }
+        form { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; }
+        label { display: grid; gap: 4px; font-size: .9rem; }
+        input, select, button { font: inherit; padding: 8px; }
+        button { cursor: pointer; }
+        .project-list { display: grid; gap: 10px; margin-top: 16px; }
+        details { border: 1px solid #d8dee6; border-radius: 6px; background: #fbfcfd; }
+        summary { cursor: pointer; padding: 14px 16px; font-weight: 700; }
+        .project-content, .component-content { padding: 0 16px 16px; }
+        .component-list { display: grid; gap: 10px; }
+        .component { border: 1px solid #e5e7eb; border-radius: 6px; background: white; }
+        .component-heading { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 12px 16px; }
+        .component-heading h3 { margin: 0; }
+        .part { display: grid; grid-template-columns: 2fr repeat(4, 1fr) auto; gap: 8px; align-items: center; padding: 8px 0; border-top: 1px solid #f1f3f5; }
+        .parts { padding: 0 16px; }
+        .add-component, .add-part { margin-top: 12px; }
+        .ok { color: #176b3a; } .missing { color: #a33b2c; }
+        #message { min-height: 1.2em; color: #7a2e2e; }
+        @media (max-width: 700px) { .part { grid-template-columns: 1fr 1fr; } }
+    </style> -->
+</head>
+<body>
+    <header class="page-header">
+        <h1>Projects</h1>
+        <form id="project-form">
+            <label>Project name <input id="project-name" required maxlength="120"></label>
+            <button type="submit">Create project</button>
+        </form>
+        <div id="project-list" class="project-list"></div>
+        <p id="message" role="status"></p>
+    </header>
+
+    <footer class="page-footer"><a href="IM_Web.html">Return home</a></footer>
+    <script src="IM_Config.js"></script>
+    <script src="IM_Projects.js"></script>
+</body>
+</html>
